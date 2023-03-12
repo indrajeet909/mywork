@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300;400;500;600&family=Roboto:wght@400;500;700;900&display=swap');
+/* =====================================================================
+                               ++++++ Root-restart ++++++
+========================================================================*/
+:root{
+    /* CSS custome property handler */
+    --lrg-fs : 5em;
+    --prm-ff : "Roboto";
+    --prm-mg:2.1rem;
+    --clr-white:#fff;
+    --clr-black:#000;
+    --scnd-ff:"Arima";
+
+}
+*,
+*::before, 
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+}
+/* =====================================================================
+                                Typographic restart
+========================================================================*/
+p{
+    font-size: 2.5em;
+    font-family: var(--prm-ff);
+    line-height: 2.1rem;
+}
+h1{
+    font-size: var(--lrg-fs);
+    line-height: 2.6rem;
+}
+
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* =====================================================================
+                                Navigator
+========================================================================*/
+
+/* =====================================================================
+                                1.Hero-section
+========================================================================*/
+.hero-container{
+    position: relative;
+    height: 50vh;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    min-height: 50vh;
+    padding: 25rem 0;
+}
+.hero-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-1;
+    transform: translate(-50%,-50%);
+}
+.hero-intro{
+    font-family: var(--prm-ff);
+  font-size:30px;
+  color:var(--clr-white);
+  text-shadow: 0 0 20px var(--clr-black);
+  max-width: 50rem;
+  margin: 0 auto;
+  
+}
+
+/* =====================================================================
+                                2.Header-section
+========================================================================*/
+.header-container{
+    margin: var(--prm-mg);
+}
+.header-intro{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: wrap;
+    margin: 1em;
+}
+.header-paragraph{
+    max-width: 70rem;
+    margin: auto;
+    position: relative;
+    
+}
